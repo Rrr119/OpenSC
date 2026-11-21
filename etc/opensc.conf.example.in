@@ -254,6 +254,18 @@ app default {
 	# using the card_atr block. The goal is to centralize
 	# everything related to a certain card to card_atr.
 	#
+	card_driver smartlog {
+		# SmartLog PKI cards are used for interactive workstation
+		# logon. The three supported card profiles (smartlog v1, v2
+		# and v3) are selected by ATR and each one enforces its own
+		# PIN policy (minimum/maximum length, character set and
+		# retry counter). The PIN policy is published through the
+		# PKCS#15 layer, so it is visible to the PKCS#11 module.
+		#
+		# Enable pinpad if the reader supports it.
+		# enable_pinpad = true;
+	}
+	#
 	# The supported internal card driver names can be retrieved
 	# from the output of:
 	# $ opensc-tool --list-drivers

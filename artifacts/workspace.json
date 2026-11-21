@@ -1,0 +1,17 @@
+{
+  "root": "/home/dev/feedback/uid31129",
+  "B": "/home/dev/feedback/uid31129",
+  "sha": "a1ec36b874e8f68c091b24feff66c9dce9682bf5",
+  "wslDistro": "Ubuntu-26.04",
+  "source": {
+    "owner": "OpenSC",
+    "repo": "OpenSC",
+    "sha": "a1ec36b874e8f68c091b24feff66c9dce9682bf5"
+  },
+  "fork": {
+    "owner": "Rrr119",
+    "repo": "OpenSC",
+    "cloneUrl": "https://github.com/Rrr119/OpenSC.git"
+  },
+  "at": "2026-11-21T02:35:01.987Z"
+}

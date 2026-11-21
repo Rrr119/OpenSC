@@ -296,6 +296,12 @@ enum {
 
 	/* Bit4id Digital-DNA (NXP ChipDoc, Italian CNS/eID) */
 	SC_CARD_TYPE_CHIPDOC_IT = 46000,
+
+	/* SmartLog PKI cards for interactive logon */
+	SC_CARD_TYPE_SMARTLOG_BASE = 47000,
+	SC_CARD_TYPE_SMARTLOG_V1,
+	SC_CARD_TYPE_SMARTLOG_V2,
+	SC_CARD_TYPE_SMARTLOG_V3,
 };
 
 extern sc_card_driver_t *sc_get_default_driver(void);
@@ -344,6 +350,7 @@ extern sc_card_driver_t *sc_get_dtrust_driver(void);
 extern sc_card_driver_t *sc_get_lteid_driver(void);
 extern sc_card_driver_t *sc_get_srbeid_driver(void);
 extern sc_card_driver_t *sc_get_cedulauy_driver(void);
+extern sc_card_driver_t *sc_get_smartlog_driver(void);
 
 #ifdef __cplusplus
 }
